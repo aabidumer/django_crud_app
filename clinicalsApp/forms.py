@@ -1,12 +1,12 @@
 from django import forms
-from clinicalsApp.models import ClinicalData, Patient
+from clinicalsApp.models import ClinicalData,Patients
 
-class PatientForm(forms.ModelForm)
+class PatientForm(forms.ModelForm):
     class Meta:
         model = Patients
-        field='__all__'
+        fields='__all__'
 
 class ClinicalDataForm(forms.ModelForm):
     class Meta:
         model = ClinicalData
-        field='__all__'
+        fields='__all__'
